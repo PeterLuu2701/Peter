@@ -1,0 +1,106 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="portfolio-3.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Portfolio Project: Shoes Shop</h1>
+        </div>
+
+        <div class="row portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div class="item">
+                        <img src="img/portfolio/ShoesShop/shoesshop_1.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/ShoesShop/shoesshop_2.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/ShoesShop/shoesshop_3.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/ShoesShop/shoesshop_4.png" alt="" />
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                        $('.portfolio-page-carousel').imagesLoaded(function(){
+                            $('.portfolio-page-carousel').owlCarousel({
+                                smartSpeed:1200,
+                                items: 1,
+                                loop: true,
+                                dots: true,
+                                nav: true,
+                                navText: false,
+                                margin: 10,
+                                autoHeight:true
+                            });
+                        });
+                    });
+                </script>
+        </div>
+        <div class="row portfolio-block">
+            <!-- Project Description -->
+            <div class="project-description">
+                <div class="block-title">
+                    <h3>Description</h3>
+                </div>
+                <ul class="project-general-info">
+                    <li><p><i class="fa fa-link"></i><a href="https://shoes-shop-react-three.vercel.app/" target="_blank">Go to Project</a></p></li>
+                </ul>
+
+                <p class="text-justify">This project is a CRUD application built with TypeScript and React, focusing on Redux and hooks. It interacts with a public database and APIs to fetch and create data.</p>
+                <p class="text-justify"><h3>My Role & Key Implementations</h3></p>
+                <ul class="project-general-info">
+                <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Analyzed and implemented React components for various project elements.</p></li>
+                <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Utilized useEffect and useState for data loading.</p></li>
+                <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Integrated Formik for form validation and submission.</p></li>
+                </ul>
+                <p class="text-justify"><h3>Main Features</h3></p>
+                <ul class="project-general-info">
+                    <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Main Page: Displays a list of products, using useEffect to fetch and map data from the API.</p></li>
+                    <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Product Detail Page: Shows product details, including quantity and an "Add to Cart" button (requires login).</p></li>
+                    <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Register & Login Page: Uses Formik for form validation and submission.</p></li>
+                    <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Search Page: Allows users to search for products by keyword and sort results in ascending or descending order.</p></li>
+                    <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Cart Page: Displays selected products with a payment button.</p></li>
+                    <li><p class="text-justify"><i class="fa fa-dot-circle"></i>User Page: Shows user information, including payment history.</p></li>
+                    <li><p class="text-justify"><i class="fa fa-dot-circle"></i>Deploys by Vercel</p></li>
+                    </ul>
+
+                    <p class="text-justify">You can explore the project by creating your own user account on the Register Page and interacting with the features.</p>
+                <!-- /Project Description -->
+
+                <!-- Technology -->
+                <div class="tags-block">
+                    <div class="block-title">
+                        <h3>Skills</h3>
+                    </div>
+                    <ul class="tags">
+                        <li><a>TypeScript</a></li>
+                        <li><a>React</a></li>
+                        <li><a>Redux</a></li>
+                        <li><a>Hook</a></li>
+                        <li><a>Bootstrap</a></li>
+                        <li><a>JWT</a></li>
+                        <li><a>SASS</a></li>
+                        <li><a>Yup</a></li>
+                        <li><a>Formik</a></li>
+                        <li><a>Git</a></li>
+                        <li><a>FetchAPI</a></li>
+                        <li><a>Vercel</a></li>
+                    </ul>
+                </div>
+                <!-- /Technology -->
+            </div>
+            <!-- Project Description -->
+        </div>
+    </div>
+</div>
